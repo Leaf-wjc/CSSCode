@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			font-size: 20px;
+			font-family: "微软雅黑";
+		}
+		ul li{
+			color: green;
+		}
+		ol li{
+			color: blue;
+		}
+				.test_cl a:hover{
+			color: orange;
+		}
+
+		.test_cl a:link{
+			color: red;
+		}
+
+
+		.test_cl a:active{
+			color: green;
+		}
+		.test_cl a:visited{
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<!-- 后代选择器的空格是它们之间的结合符 
+		1.比如#test .test1
+		2.伪类选择器
+		链接伪类4种状态:激活状态，已访问状态，未访问状态，悬停状态
+		:link
+		:visited
+		:hover
+		:active
+	-->
+		<h3 class="a">我是标题3里面的文字</h3>
+		<div id="b">我是div里面的文字</div>
+		<p>我是P里面的文字</p>
+	    <a id="c">我是a里面的文字</a>
+	    <span>我是span里面的文字</span>
+	    <!-- 后代选择器 -->
+	    <h3>图书排行榜</h3>
+	    <ul id="test">
+	    	<li class="test1">三体</li>
+	    	<li>盗墓笔记</li>
+	    	<li>三生三世十里桃花</li>
+	    </ul>
+	    <h3>游戏排行榜</h3>
+	    <ol>
+	    	<li>英雄联盟</li>
+	    	<li>DOTA</li>
+	    	<li>魔兽世界</li>
+	    </ol>
+	    <!-- 伪类选择器 -->
+
+	    <div class="test_cl">
+	    	<a href="https://www.baidu.com/">测试伪类</a>
+	    </div>
+</body>
+</html>
