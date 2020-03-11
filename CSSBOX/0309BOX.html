@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型</title>
+	<style>
+		div{
+			width: 600px;
+			background-color: pink;
+		}
+		p{
+			background-color: yellow;
+		}
+		p.one{
+			width: 50%;
+		}
+		p.two{
+			max-width: 30%;
+		}
+		p.three{
+			min-width: 70%;
+		}
+		.test_bor{
+			width: 400px;
+			height: 470px;
+			padding: 60px;
+			background-color:pink;
+			border:1px solid green;
+		}
+		.test_bor1{
+			width: 100%;
+			height: 100%;
+			opacity: 0.1;
+			padding: 20px;
+			background-color: black;
+
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	1.width属性 max-width最大宽度 min-width最小宽度 IE6不生效
+	max-width只能比这个数值小不能比这个数值大
+	min-width只能比这个数值大不能比这个数值小
+	2.height属性 max-height最大高度 min-height最下高度
+	max-height只能比这个数值小不能比这个数值大
+	min-height只能比这个数值大不能比这个数值小
+	3.border-width border-color border-style
+	dotted是点状边框 dashed是虚线边框
+	-----------------------------------------------
+	3.paddng margin属性 内容与边框之间的距离（重点研究）
+	  margin-left正值时向右移动 负值时向左移动
+	  盒子内容宽高就是content本身的宽高，也就是width、height
+	  盒子实际宽高等于width+padding+border
+	  盒子实际占据宽高等于width+padding+border+margin
+	  行内元素无法设置宽高，外边距只能设置左右，无法设置上下
+	-----------------------------------------------
+ -->
+ <div>
+ 	<p class="one">第一个标签是父元素高度的50%</p>
+ 	<p class="two">第二个标签的最大宽度是父元素的30%</p>
+ 	<p class="three">第三个标签的最小宽度是父元70%</p>
+ </div>
+
+ <div class="test_bor">
+ 	<div class="test_bor1">
+ 		
+ 	</div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>display属性</title>
+        <style type="text/css">
+          /*样式补充*/
+          *{
+          	margin: 0;
+          	padding: 0;
+          }
+          .big{
+          	width: 130px;
+          	margin: 0 auto;
+          	border-top: 1px solid #b5b4b4;
+          }
+          .big div{
+          	border-left: 1px solid #b5b4b4;
+          	border-right: 1px solid #b5b4b4;
+          	border-bottom: 1px solid #b5b4b4;
+          }
+          h3{
+          	text-align: center;
+          	background-color:#eeeeee;
+
+          }
+          ul{
+          	border-top: 1px solid #b5b4b4;
+          	display: none;
+          }
+          ul li{
+          	list-style: none;
+          	text-align: center;
+          	font-size: 14px;
+          	color: #b5b4b4;
+          }
+          h3:hover+ul{
+          	display: block;
+          }
+        </style>
+    </head>
+    <body>
+    <div class="big">
+        <div class="div1">
+            <h3>家电</h3>
+            <ul class="elec">
+                <li>冰箱</li>
+                <li>洗衣机</li>
+                <li>空调</li>
+            </ul>
+        </div>
+        <div class="div2">
+            <h3>洗护</h3>
+            <ul class="wash">
+                <li>洗衣液</li>
+                <li>消毒液</li>
+                <li>柔顺剂</li>
+            </ul>
+        </div>
+        <div  class="div3">
+            <h3>衣物</h3>
+             <ul class="clothes">
+                <li>衬衫</li>
+                <li>裤子</li>
+                <li>卫衣</li>
+            </ul>
+        </div>
+      </div>
+</body>
+</html>
