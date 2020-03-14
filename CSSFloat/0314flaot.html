@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float</title>
+	<style>
+		.wrap{
+			width: 500px;
+			height: auto;
+			border:1px solid red;
+		}
+		.wrap:after{
+			content: '.';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.test1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			float: left;
+		}
+		.test2{
+			width: 100px;
+			height: 100px;
+			background-color: gray;
+			float: left;
+		}
+		.test3{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			float: left;
+		}
+		.wrap_contan{
+			width: 200px;
+			height: 200px;
+			border:1px solid black;
+			background-color: green;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 
+		1.清楚浮动常用方法
+		.clear-fix:after{
+		content:".";
+		display:block;
+		height:0;
+		visiblity:hidden;
+		cleart:both;
+		}
+		.clear-fix{
+		zoom:1;
+		}
+		2.在浮动元素后添加一个div，设置成clear-both
+		3.或者给父元素设置over-flow:hidden;
+		4.固定父元素高度或者让父元素浮动
+	 -->
+	 <div class="wrap">
+		 <div class="test1">1</div>
+		 <div class="test2">2</div>
+		 <div class="test3">3</div>
+	 </div>
+	 <div class="wrap_contan"></div>
+
+</body>
+</html>
