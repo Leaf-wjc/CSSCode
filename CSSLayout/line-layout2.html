@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航布局</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.nav{
+			width: 1100px;
+			height: 100px;
+			line-height:100px;
+			background-color:black;
+			position: absolute;
+			margin:auto auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+/*			left:50%;
+			top:50%;
+			margin-left:-550px;
+			margin-top:-50px;*/
+
+
+		}
+		.logo{
+			float:left;
+		}
+		img{
+			display:block;
+		}
+		.nav-li{
+			float:right;
+		}
+		.nav-li ul {
+			list-style:none;
+		}
+		.nav-li ul li{
+			text-align:center;
+			color:white;
+			float:left;
+			font-size:20px;
+			padding:0 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="logo">
+			<a href=""><img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png" alt=""></a>
+		</div>
+		<div class="nav-li">
+			<ul>
+				<li>课程</li>
+				<li>职业路径</li>
+				<li>实战</li>
+				<li>猿问</li>
+				<li>手记</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
