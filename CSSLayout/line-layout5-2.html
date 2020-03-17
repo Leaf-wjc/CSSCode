@@ -47,6 +47,22 @@
 		ul{
 			list-style:none;
 		}
+		input{
+			height:25px;
+			width:180px;
+			margin-top:15px;
+			border:none;
+		}
+		.btn-login{
+			width:180px;
+			height:40px;
+			background-color:red;
+			border-radius:3px;
+			color:white;
+			text-align:center;
+			font-size:18px;
+			cursor:pointer;
+		}
 
 		.nav-li ul li{
 			color:white;
@@ -75,6 +91,7 @@
 			height:700px;
 			padding-top:50px;
 			margin:0 auto;
+			min-width:740px;
 		}
 		.course-list p{
 			line-height:40px;
@@ -94,18 +111,23 @@
 		}
 
 		.course-list .list-left{
-			width:60%;
+			width:40%;
 			height:700px;
 			float:left;
 		}
 
+		.course-list .list-center{
+			width:30%;
+			height:700px;
+			float:left;
+		}
 		.course-list .list-right{
-			width:40%;
+			width:30%;
 			height:700px;
 			float:right;
 		}
 
-		.course-list .list-right p span{
+		.course-list .list-center p span{
 			background-color:#ADD8E6;
 		}
 		/*页脚*/
@@ -160,11 +182,27 @@
 				<p><span>职业路径</span><a href="">PHP入门开发</a></p>
 				<p><span>职业路径</span><a href="">JAVA入门开发</a></p>
 			</div>
-			<div class="list-right">
+			<div class="list-center">
 				<h3>相关课程</h3>
 				<p><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
 				<p><span>HTML5</span><span>CSS3</span><span>Jquery</span></p>
 				<p><span>移动端基础</span><span>移动端APP开发</span></p>
+			</div>
+			<div class="list-right">
+				<h3>登录</h3>
+				<form action="">
+					<table>
+						<tr>
+							<td><input type="text" class="inputWidth"></td>
+						</tr>
+						<tr>
+							<td><input type="password"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="登录" class="btn-login"></td>
+						</tr>
+					</table>
+				</form>
 			</div>
 		</div>
 	</div>
